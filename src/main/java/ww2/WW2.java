@@ -3,6 +3,7 @@
  */
 
 package ww2;
+import Vistas.VistaPais;
 
 /**
  *
@@ -11,6 +12,11 @@ package ww2;
 public class WW2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new VistaPais().setVisible(true);
+            }
+        });
     }
 }
